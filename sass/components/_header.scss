@@ -1,0 +1,21 @@
+.header {
+	background-color: var(--subtext-color);
+	color: var(--main-color);
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+	&__intro--name {
+		font-size: 28px;
+		text-transform: uppercase;
+	}
+
+	&__intro--prof {
+		color: rgb(190, 189, 189);
+	}
+}
+
+
+.deco {
+	font-size: 32px;
+}
