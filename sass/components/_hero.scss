@@ -6,7 +6,7 @@
 	&__photo {
 		border-radius: 50%;
 		border: 1.5px solid black;
-		margin-bottom: 30px;
+		// margin: 30px;
 
 		&--container {
 			text-align: center;
@@ -14,7 +14,7 @@
 	}
 	&__contacts {
 		display: flex;
-		padding: 25px;
+		// padding: 25px;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -31,4 +31,38 @@
 			}
 		}
 	}
+	&__edu--list {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	&__edu--item {
+		display: flex;
+		justify-content: space-between;
+		font-size: 14px;
+	}
+
+	div:nth-child(2),
+	div:nth-child(3) {
+		border-bottom: 2px solid var(--active-color);
+	}
+
+	&__skills--list {
+		display: flex;
+		// flex-direction: column;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+
+	&__skills--item {
+		// display: flex;
+		gap: 5px;
+	}
+}
+
+.edu-year {
+	color: var(--active-color);
+	font-weight: bold;
 }
