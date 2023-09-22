@@ -4,18 +4,34 @@
 	display: flex;
 	justify-content: center;
 	text-align: center;
+	
+	@include tablet{
+		padding-left:30%;
+	}
 
 	&__intro--name {
 		font-size: 28px;
 		text-transform: uppercase;
+
+		@include tablet {
+			font-size: 38px;
+		}
 	}
 
 	&__intro--prof {
 		color: rgb(190, 189, 189);
+
+		@include tablet {
+			font-size: 22px;
+		}
 	}
 }
 
 
 .deco {
 	font-size: 32px;
+
+	@include tablet {
+		font-size: 46px;
+	}
 }

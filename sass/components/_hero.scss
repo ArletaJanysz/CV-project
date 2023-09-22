@@ -3,15 +3,34 @@
 	display: flex;
 	flex-direction: column;
 
+	@include tablet {
+		min-width: 300px;
+		max-width: 30%;
+		height: 100%;
+		position: absolute;
+		top: 45px;
+		left: 30px;
+	}
+
 	&__photo {
 		border-radius: 50%;
-		border: 1.5px solid black;
+		border: 1.5px solid #000000;
 		// margin: 30px;
+
+		@include tablet {
+			width: 75%;
+			height: auto;
+		}
 
 		&--container {
 			text-align: center;
+
+			@include tablet {
+				padding: 15px 0;
+			}
 		}
 	}
+
 	&__contacts {
 		display: flex;
 		// padding: 25px;
@@ -20,6 +39,11 @@
 		justify-content: center;
 		gap: 8px;
 		font-size: 14px;
+
+		@include tablet {
+			gap: 15px;
+			font-size: 18px;
+		}
 
 		&--link {
 			text-decoration: none;
@@ -31,21 +55,40 @@
 			}
 		}
 	}
+
 	&__edu--list {
 		display: flex;
 		flex-direction: column;
-		gap: 5px;
+		gap: 15px;
+
+		@include tablet {
+			gap: 25px;
+			font-size: 20px;
+		}
 	}
 
 	&__edu--item {
 		display: flex;
 		justify-content: space-between;
 		font-size: 14px;
+
+		@include tablet {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 5px;
+			font-size: 20px;
+		}
 	}
 
 	div:nth-child(2),
 	div:nth-child(3) {
 		border-bottom: 2px solid var(--active-color);
+
+		@include tablet {
+			min-width: fit-content;
+			max-width: 80%;
+		}
 	}
 
 	&__skills--list {
@@ -54,6 +97,14 @@
 		justify-content: space-evenly;
 		flex-wrap: wrap;
 		gap: 15px;
+
+		@include tablet {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			font-size: 22px;
+		}
 	}
 
 	&__skills--item {

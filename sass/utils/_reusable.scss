@@ -6,22 +6,23 @@
 	padding: 25px 15px;
 	// border-bottom: 2px solid var(--active-color)
 
-	// @include tablet {
-	// 	max-width: 768px;
-	// }
-	// @include desktop {
-	// 	max-width: 1200px;
-	// }
+	@include tablet {
+		max-width: 768px;
+		padding: 45px 15px;
+	}
+	@include desktop {
+		max-width: 1200px;
+	}
 }
 
 .section {
 	padding-top: 30px;
 	padding-bottom: 30px;
 
-	// @include desktop {
-	// 	padding-top: 94px;
-	// 	padding-bottom: 94px;
-	// }
+	@include desktop {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 h2 {
@@ -30,4 +31,8 @@ h2 {
 	font-size: 28px;
 	text-transform: uppercase;
 	margin-bottom: 15px;
+
+	@include tablet {
+		font-size: 32px;
+	}
 }
