@@ -1,11 +1,10 @@
 .about {
-	font-size: 14px;
+	font-size: 44px;
 	display: flex;
 	flex-direction: column;
 
 	@include tablet {
 		padding-left: 35%;
-	
 	}
 
 	&--profile {
@@ -55,9 +54,8 @@
 	div:nth-child(1),
 	div:nth-child(2) {
 		border-bottom: 2px solid var(--active-color);
-		
+
 		@include tablet {
-			// min-width: fit-content;
 			max-width: 95%;
 		}
 	}
