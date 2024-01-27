@@ -1,7 +1,3 @@
-# CV-project
-
-https://github.com/ArletaJanysz/CV-project
-
 # About
 
 This is my Curriculum vitae.
