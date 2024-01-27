@@ -4,9 +4,9 @@
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	
-	@include tablet{
-		padding-left:30%;
+
+	@include tablet {
+		padding-left: 30%;
 	}
 
 	&__intro--name {
@@ -26,7 +26,6 @@
 		}
 	}
 }
-
 
 .deco {
 	font-size: 32px;

@@ -8,10 +8,18 @@
 
 	@include tablet {
 		max-width: 768px;
-		padding: 45px 15px;
+		padding: 45px 10px;
 	}
 	@include desktop {
 		max-width: 1200px;
+	}
+}
+
+.about-container {
+	padding: 45px 10px;
+
+	@include desktop {
+		padding: 65px 25px;
 	}
 }
 
@@ -20,8 +28,8 @@
 	padding-bottom: 30px;
 
 	@include desktop {
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 }
 

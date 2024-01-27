@@ -2,13 +2,20 @@
 	background-color: rgb(255, 202, 218);
 	display: flex;
 	flex-direction: column;
-
+	height: fit-content;
+	
+	&__section {
+		padding: 20px 0;
+	}
+	
+	
 	@include tablet {
 		min-width: 300px;
 		max-width: 30%;
 		position: absolute;
 		top: 45px;
 		left: 30px;
+		
 	}
 
 	&__photo {
@@ -16,16 +23,12 @@
 		border: 1.5px solid #000000;
 
 		@include tablet {
-			width: 75%;
+			width: 55%;
 			height: auto;
 		}
 
 		&--container {
 			text-align: center;
-
-			@include tablet {
-				padding: 15px 0;
-			}
 		}
 	}
 
@@ -39,7 +42,7 @@
 
 		@include tablet {
 			gap: 15px;
-			font-size: 18px;
+			font-size: 16px;
 		}
 
 		&--link {
@@ -60,7 +63,7 @@
 
 		@include tablet {
 			gap: 25px;
-			font-size: 20px;
+			font-size: 18px;
 		}
 	}
 
@@ -98,8 +101,8 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			gap: 20px;
-			font-size: 22px;
+			gap: 10px;
+			font-size: 20px;
 		}
 	}
 
